@@ -21,17 +21,16 @@ public class PositionType {
 
     @Override
     public String toString() {
-        return "PositionType{" +
-                       "value='" + value + '\'' +
-                       '}';
+        return this.value;
+
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        PositionType that = (PositionType) o;
-        return id == that.id;
+        if (!(o instanceof PositionType)) return false;
+        PositionType positionType = (PositionType) o;
+        return getId() == positionType.id;
     }
 
     @Override
