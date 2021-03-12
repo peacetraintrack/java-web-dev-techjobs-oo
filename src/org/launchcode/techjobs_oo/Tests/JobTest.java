@@ -75,7 +75,7 @@ Each field should be on its own line.
 	@Test
 	public void stringHasLabelForEachField() {
 		assertEquals(job1.toString(), '\n' +
-		 "ID:" + job1.getId() + '\n' +
+		 "ID: " + job1.getId() + '\n' +
 		"Name: " + job1.getName() + '\n' +
 		"Employer: " + job1.getEmployer() + '\n' +
 		"Location: " + job1.getLocation() + '\n' +

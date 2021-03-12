@@ -111,15 +111,17 @@ public class Job {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Job)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Job job = (Job) o;
-        return getId() == job.id;
+        return id == job.id;
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id);
     }
+
+
 
 
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
