@@ -74,6 +74,39 @@ public class Job {
     }
 
     //equals and hashCode methods
+//    toString Method
+@Override
+    public String toString() {
+
+        if (name.equals("")) {
+            name = "Data not available";
+        }
+        if (employer.getValue().equals("")) {
+            employer.setValue("Data not available");
+        }
+        if (location.getValue().equals("")) {
+            location.setValue("Data not available");
+        }
+        if (positionType.getValue().equals("")) {
+            positionType.setValue("Data not available");
+        }
+        if (coreCompetency.getValue().equals("")) {
+            coreCompetency.setValue("Data not available");
+        }
+
+
+        String display = "\n" +
+        "ID: " + id + "\n" +
+        "Name: " + name + "\n" +
+        "Employer: " + employer + "\n" +
+        "Location: " + location + "\n" +
+        "Position Type: " + positionType + "\n" +
+        "Core Competency: " + coreCompetency + "\n"
+         ;
+
+        return display;
+    }
+
 
     @Override
     public boolean equals(Object o) {
